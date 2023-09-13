@@ -1,0 +1,31 @@
+#%RAML 1.0 ResourceType
+get?:
+  description: Get details of all events
+  responses:
+    200:
+      body:
+        application/json:
+          examples:
+            <<example1>>
+post?:
+  body:
+    application/json:
+      examples:
+        <<example2>>
+  responses:
+    201:
+      body:
+        application/json:
+          example:
+            message: Event created successfully
+delete?:
+  responses:
+    200:
+      body:
+        application/json:
+          example:
+            message:Event deleted
+                          
+                  
+                          
+  
