@@ -1,0 +1,32 @@
+#%RAML 1.0
+title: google event
+types:
+  meeting: !include /dataType.raml
+resourceTypes:
+  event12: !include /resourcetype/resourceType1.raml
+  event123: !include /resourcetype/resourceType2.raml
+/event:
+  type:
+    event12:
+     example1: !include /exmples/example1.raml
+     example2: !include /exmples/example2.raml
+  get:
+  post:
+  /{id}:
+    type:
+     event12:
+       example1: 
+       example2:
+    delete:
+/update:
+  /{id}:
+    type:
+      event123:
+        example3: !include /exmples/example3.raml
+                       
+
+
+
+   
+
+  
